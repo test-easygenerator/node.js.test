@@ -35,3 +35,8 @@ jobs:
 
       # run tests!
       - run: yarn test
+  deployment:
+   dev:
+     branch: master
+     commands:
+       - ssh deployment@3.213.165.5 'cd ~/node.js.test && git pull origin master && pm2 restart app.js'      
