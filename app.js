@@ -6,7 +6,7 @@ const server = http.createServer((req, res) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
 
-    res.end('Hello New World\n');
+    res.end('Hello Another World\n');
 });
 
 server.listen(APP_PORT, function () {
